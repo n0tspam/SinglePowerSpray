@@ -1,4 +1,8 @@
-$OutFile = "<some path to outfile"
+############ You should first check the password policy before running this script ################
+###### Use at your own risk ######
+
+$Password = "<password you want to try>"
+$OutFile = "<some path to outfile>"
 $UserListArray = Get-Content "<some text file with usernames>"
 $Domain = "<specify domain>"
 $DomainContext = New-Object System.DirectoryServices.ActiveDirectory.DirectoryContext("domain",$Domain)
